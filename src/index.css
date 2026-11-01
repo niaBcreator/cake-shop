@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Tahoma, Arial, sans-serif;
+  background-color: #f8f1e8;
+  color: #38251d;
+}
+
+main {
+  min-height: 100vh;
+  direction: rtl;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Homepage */
+
+.home,
+.signup-page,
+.order-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+}
+
+.home {
+  gap: 35px;
+}
+
+.home h1 {
+  font-size: 52px;
+  color: #a65e35;
+}
+
+.order-button,
+.submit-button {
+  background-color: #754b38;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 17px 30px;
+  font-size: 18px;
+}
+
+.order-button:hover,
+.submit-button:hover {
+  background-color: #543323;
+}
+
+/* Signup page */
+
+.signup-page {
+  gap: 12px;
+}
+
+.signup-page h2 {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+.signup-page p {
+  color: #593b2c;
+}
+
+.signup-form {
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 15px;
+  text-align: right;
+}
+
+.signup-form label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #38251d;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #b69c88;
+  border-radius: 8px;
+  background: white;
+  font-size: 16px;
+  color: #38251d;
+}
+
+.signup-form input:focus {
+  outline: 2px solid #a65e35;
+}
+
+.submit-button {
+  margin-top: 12px;
+}
+
+.back-button {
+  background: transparent;
+  border: none;
+  color: #593b2c;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.error {
+  color: #a32222 !important;
+  font-size: 14px;
+}
+
+/* Ordering slides */
+
+.order-page {
+  gap: 45px;
+}
+
+.slide-counter {
+  color: #593b2c;
+}
+
+.question h2 {
+  font-size: 27px;
+  margin-bottom: 35px;
+  color: #38251d;
+}
+
+.weight-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.weight-input span {
+  font-size: 20px;
+}
+
+.weight-input input {
+  width: 150px;
+  padding: 13px;
+  border: 1px solid #b69c88;
+  border-radius: 8px;
+  font-size: 20px;
+  text-align: center;
+  color: #38251d;
+}
+
+.flavor-options,
+.navigation {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.option {
+  min-width: 130px;
+  padding: 16px 25px;
+  border: 1px solid #b69c88;
+  border-radius: 8px;
+  background: white;
+  color: #38251d;
+  font-size: 19px;
+}
+
+.option.selected {
+  background: #754b38;
+  color: white;
+  border-color: #754b38;
+}
+
+.navigation button {
+  min-width: 115px;
+  padding: 13px 25px;
+  border: none;
+  border-radius: 8px;
+  background: #754b38;
+  color: white;
+  font-size: 17px;
+}
+
+.navigation button:disabled {
+  background: #b9a99c;
+  cursor: not-allowed;
+}
